@@ -2,9 +2,11 @@ import { useEffect, useState } from 'react'
 import { TProduct, TProductList } from '../types/product';
 
 export default function useCart() {
+    const cartData = localStorage.getItem("cart") ? JSON.parse(localStorage.getItem("cart") || '') : []
+
     const [selectedProduct, setSelectedProduct] = useState<TProduct | null>(null);
     const [cart, setCart] = useState<TProductList>(
-        () => JSON.parse(localStorage.getItem("cart") || '') || [],
+        () => cartData,
     );
 
     useEffect(() => {
