@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import { TProduct, TProductList } from '../types/product';
 
 export default function useCart() {

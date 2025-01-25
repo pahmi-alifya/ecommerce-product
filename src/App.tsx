@@ -1,4 +1,4 @@
-import React, { lazy, useState } from "react";
+import { lazy, useState } from "react";
 import { Layout, Menu, Select } from "antd";
 import "antd/dist/reset.css";
 import ProductList from "./components/ProductList";
